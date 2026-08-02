@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Loops | for and while Statements</title>
+  <meta name="description" content="Learn Python loops with for and while statements, range(), break, continue, and practical repetition examples.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html" aria-current="page">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Loops</h1>
+    <p>Loops repeat work without forcing you to duplicate code. A for loop is usually best when you know the sequence or number of items, and a while loop is better when repetition depends on a condition. The goal is to express repeated behavior clearly and safely.</p>
+    <div class="content-card">
+      <h2>for and while examples</h2>
+      <pre class="code-block"><code>for number in range(1, 4):
+    print(number)
+
+attempts = 3
+while attempts > 0:
+    print("Try again")
+    attempts -= 1</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>break and continue</h2><p>break stops the loop early when work is complete. continue skips to the next iteration when a value should be ignored.</p></article>
+      <article class="content-card"><h2>Looping over collections</h2><p>Python makes it natural to loop over lists, strings, and dictionaries. This is one of the language's most productive features.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>When should I prefer for over while?</summary><p>Use for loops when iterating over items or a known range. Use while loops when a condition controls the stop point.</p></details><details class="faq-item"><summary>What does range() do?</summary><p>range() generates a sequence of numbers and is commonly used with for loops for controlled repetition.</p></details><details class="faq-item"><summary>How do I avoid infinite while loops?</summary><p>Make sure the loop condition changes inside the loop, or include a break path for safety.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Repeat tasks efficiently with for loops, while loops, and flow control.</p></div><div class="footer-links"><a href="functions.html">Functions</a><a href="comprehensions.html">Comprehensions</a><a href="projects.html">Projects</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

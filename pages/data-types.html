@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Data Types | Numbers, Text, and Collections</title>
+  <meta name="description" content="Understand Python data types including integers, floats, strings, lists, tuples, sets, and dictionaries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html" aria-current="page">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Data Types</h1>
+    <p>Python data types describe the shape of the data you work with. Numbers support calculations, strings hold text, and collection types help organize multiple values together. Learning the major built-in types makes it easier to pick the right structure for each problem.</p>
+    <div class="content-card">
+      <h2>Core built-in types</h2>
+      <div class="content-grid">
+        <div><h3>Numeric types</h3><p>int stores whole numbers and float stores decimals. Use them for counts, rates, and measurements.</p></div>
+        <div><h3>Text type</h3><p>str represents text. Strings support slicing, formatting, and many useful methods for cleaning data.</p></div>
+      </div>
+      <pre class="code-block"><code>age = 28
+price = 19.99
+message = "Python is practical"
+tags = ["web", "data", "automation"]</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card">
+        <h2>Mutable versus immutable</h2>
+        <p>Lists and dictionaries can change after creation, while tuples and strings are immutable. That difference influences how safely values can be shared and modified.</p>
+      </article>
+      <article class="content-card">
+        <h2>Choosing the right type</h2>
+        <p>Use a list when order matters and values may change, a tuple when the record should stay fixed, a set for unique items, and a dictionary for key-value lookup.</p>
+      </article>
+    </div>
+    <div class="content-card" data-faq>
+      <h2>FAQs</h2>
+      <div class="faq-list">
+        <details class="faq-item"><summary>What is the difference between a list and a tuple?</summary><p>Lists are mutable and ideal for changing data. Tuples are immutable and useful when you want a fixed collection.</p></details>
+        <details class="faq-item"><summary>Why does Python have so many built-in types?</summary><p>Different data structures solve different problems. Picking the right one makes code easier to read and often faster to run.</p></details>
+        <details class="faq-item"><summary>How do I check a value's type?</summary><p>Use the type() function when learning or debugging. In practice, design code so the type is obvious from context.</p></details>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">A practical overview of Python's numbers, strings, and collection types.</p></div><div class="footer-links"><a href="variables.html">Variables</a><a href="operators.html">Operators</a><a href="loops.html">Loops</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

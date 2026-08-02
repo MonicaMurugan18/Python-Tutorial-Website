@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Testing | Writing Basic Unit Tests</title>
+  <meta name="description" content="Learn Python testing basics with unit test ideas, assertions, and simple examples for beginners.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="testing.html" aria-current="page">Testing</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Testing</h1>
+    <p>Testing helps you confirm that code behaves as expected. Even a few simple tests can catch mistakes early, document behavior, and make refactoring safer. Beginners can start with tiny assertion-based examples before moving to a full test framework.</p>
+    <div class="content-card">
+      <h2>Simple assertion example</h2>
+      <pre class="code-block"><code>def add(a, b):
+    return a + b
+
+assert add(2, 3) == 5
+assert add(-1, 1) == 0</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>What to test</h2><p>Focus on results, edge cases, and any code that would be expensive to debug after it breaks.</p></article>
+      <article class="content-card"><h2>Why it helps</h2><p>Tests give you quick feedback and reduce the risk of breaking working code when you make improvements.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>Do beginners need to learn testing?</summary><p>Yes. Basic tests teach you to think clearly about expected behavior.</p></details><details class="faq-item"><summary>Is assert enough for small scripts?</summary><p>For learning and tiny examples, yes. Larger projects usually benefit from a dedicated test framework.</p></details><details class="faq-item"><summary>When should I write tests?</summary><p>Write them as you build features or right after, while the behavior is still fresh in your mind.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Testing basics to make Python code safer and easier to trust.</p></div><div class="footer-links"><a href="functions.html">Functions</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

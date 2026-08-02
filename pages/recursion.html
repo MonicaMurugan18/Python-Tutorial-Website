@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Recursion | Functions That Call Themselves</title>
+  <meta name="description" content="Learn Python recursion with clear explanations, base cases, and a simple factorial example.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="functions.html">Functions</a><a href="recursion.html" aria-current="page">Recursion</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Recursion</h1>
+    <p>Recursion is a technique where a function solves a problem by calling itself with a smaller input. It is useful for problems that naturally break into repeated subproblems, but it should always include a base case to stop the chain of calls.</p>
+    <div class="content-card">
+      <h2>Factorial example</h2>
+      <pre class="code-block"><code>def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Base case</h2><p>The base case is the stopping condition that prevents infinite recursion.</p></article>
+      <article class="content-card"><h2>When to use it</h2><p>Recursion can be elegant for tree-like structures, nested data, and divide-and-conquer problems.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>Why do recursive functions need a base case?</summary><p>Without a base case, the function would keep calling itself until it fails.</p></details><details class="faq-item"><summary>Is recursion always better than loops?</summary><p>No. Sometimes a loop is simpler and more efficient.</p></details><details class="faq-item"><summary>What is a common beginner recursion example?</summary><p>Factorial is a classic example because each step depends on the previous one.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Recursion basics, base cases, and self-referential problem solving.</p></div><div class="footer-links"><a href="functions.html">Functions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

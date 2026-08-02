@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Functions | Defining Reusable Code</title>
+  <meta name="description" content="Learn Python functions, parameters, return values, default arguments, and reuse-friendly programming patterns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html" aria-current="page">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Functions</h1>
+    <p>Functions package behavior into reusable blocks. They help you avoid repetition, isolate logic, and make code easier to test. A strong function usually has one clear job, a small number of parameters, and a meaningful return value when needed.</p>
+    <div class="content-card">
+      <h2>Defining and calling functions</h2>
+      <pre class="code-block"><code>def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Nina"))</code></pre>
+      <p>Return values matter when the caller needs a result to use later. If a function only performs an action, it may not need to return anything.</p>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Parameters and defaults</h2><p>Default values reduce boilerplate and make functions easier to call, especially when a setting has a common fallback.</p></article>
+      <article class="content-card"><h2>Docstrings</h2><p>Use docstrings to describe what the function does, what arguments it accepts, and what it returns. They support maintenance and collaboration.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>What is the difference between parameters and arguments?</summary><p>Parameters are the names in the function definition. Arguments are the actual values passed in during a call.</p></details><details class="faq-item"><summary>When should a function return something?</summary><p>Return a value whenever the result matters outside the function, such as a calculation, transformed string, or lookup result.</p></details><details class="faq-item"><summary>Why are functions important?</summary><p>They reduce duplication, improve readability, and make code more modular and easier to debug.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Reusable logic, clear parameters, and readable return values.</p></div><div class="footer-links"><a href="oop.html">OOP</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="projects.html">Projects</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

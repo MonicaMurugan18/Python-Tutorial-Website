@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Basics | Syntax, Comments, and First Program</title>
+  <meta name="description" content="Learn Python basics including syntax, indentation, comments, and your first Python program with beginner-friendly explanations and FAQs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button>
+      <nav class="site-nav" data-site-nav>
+        <a href="../index.html">Home</a>
+        <a href="python-basics.html" aria-current="page">Basics</a>
+        <a href="variables.html">Variables</a>
+        <a href="data-types.html">Data Types</a>
+        <a href="operators.html">Operators</a>
+        <a href="input-output.html">Input &amp; Output</a>
+        <a href="conditional-statements.html">Conditionals</a>
+        <a href="loops.html">Loops</a>
+        <a href="functions.html">Functions</a>
+        <a href="oop.html">OOP</a>
+        <a href="interview-questions.html">Interview Questions</a>
+        <a href="cheat-sheet.html">Cheat Sheet</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="content page-shell">
+    <h1>Python Basics</h1>
+    <p>The first step in learning Python is understanding how the language reads code. Python uses indentation to define blocks, and its syntax is intentionally clean so beginners can focus on logic rather than punctuation. A good mental model at this stage is to write small programs, run them often, and observe how the output changes.</p>
+    <div class="content-card">
+      <h2>First Python program</h2>
+      <p>Hello World is simple, but it teaches the most important idea: code is executed from top to bottom.</p>
+      <pre class="code-block"><code>print("Hello, Python!")
+
+name = "Ava"
+print("Welcome,", name)</code></pre>
+      <ul>
+        <li><strong>print()</strong> sends text to the screen.</li>
+        <li>Variables store data for later use.</li>
+        <li>Indentation matters inside blocks such as functions and loops.</li>
+      </ul>
+    </div>
+    <div class="content-grid">
+      <article class="content-card">
+        <h2>Comments and readability</h2>
+        <p>Use comments to explain why a piece of code exists when the reason is not obvious. Keep comments short, accurate, and useful.</p>
+        <pre class="code-block"><code># Calculate the total price after tax
+subtotal = 80
+tax_rate = 0.15
+total = subtotal + subtotal * tax_rate</code></pre>
+      </article>
+      <article class="content-card">
+        <h2>Common beginner habits</h2>
+        <p>Run small examples, rename variables clearly, and format code consistently. These habits make debugging easier and improve long-term code quality.</p>
+      </article>
+    </div>
+    <div class="content-card" data-faq>
+      <h2>FAQs</h2>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Why does Python care so much about indentation?</summary><p>Indentation defines blocks of code, which keeps programs visually consistent and avoids ambiguous brace-heavy syntax.</p></details>
+        <details class="faq-item"><summary>Do I need to memorize syntax before writing projects?</summary><p>No. Start with small exercises and refer back to examples. Repetition through practice is more effective than rote memorization.</p></details>
+        <details class="faq-item"><summary>What should I learn after basics?</summary><p>Move to variables, data types, and operators so you can store values and perform useful calculations.</p></details>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Learn Python with pages built for clarity, structure, and search-friendly content.</p></div><div class="footer-links"><a href="variables.html">Variables</a><a href="functions.html">Functions</a><a href="cheat-sheet.html">Cheat Sheet</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

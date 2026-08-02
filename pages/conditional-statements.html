@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Conditional Statements | if, elif, and else</title>
+  <meta name="description" content="Learn Python conditional statements with if, elif, else, nested conditions, and practical decision-making examples.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html" aria-current="page">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Conditional Statements</h1>
+    <p>Conditionals control program flow by running code only when a condition is true. They are essential for validation, branching logic, and decision-making in real applications. The basic pattern is easy to read and scales well as decisions become more complex.</p>
+    <div class="content-card">
+      <h2>if, elif, and else</h2>
+      <pre class="code-block"><code>score = 87
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+else:
+    grade = "Needs improvement"
+
+print(grade)</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Nested conditions</h2><p>Use nesting when one decision depends on another. Keep the structure shallow where possible so it remains easy to follow.</p></article>
+      <article class="content-card"><h2>Boolean expressions</h2><p>Conditions often combine comparisons with logical operators. Clear expressions make bugs easier to spot and fix.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>When should I use elif instead of multiple if statements?</summary><p>Use elif when the conditions are mutually exclusive and only one branch should execute.</p></details><details class="faq-item"><summary>Can an if statement stand alone?</summary><p>Yes. An if block can exist without else or elif when you only need to run code in one case.</p></details><details class="faq-item"><summary>What is truthy and falsy?</summary><p>Python treats some values as true or false in conditions. Empty collections, zero, and None are common falsy values.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Branching logic, validation, and decision-making in Python.</p></div><div class="footer-links"><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="exceptions.html">Exceptions</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Input and Output | Reading and Displaying Data</title>
+  <meta name="description" content="Learn Python input and output with print(), input(), formatting, and console interaction examples.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html" aria-current="page">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Input and Output</h1>
+    <p>Input and output are how a program interacts with a user. Output usually starts with print(), while input() reads text from the keyboard. After reading input, you often convert it into a number or use it in a formatted message.</p>
+    <div class="content-card">
+      <h2>Reading and displaying data</h2>
+      <pre class="code-block"><code>name = input("Enter your name: ")
+age_text = input("Enter your age: ")
+age = int(age_text)
+
+print(f"Hello {name}, next year you will be {age + 1}.")</code></pre>
+      <p>Notice that input() always returns text. Converting it with int(), float(), or another function is a common step when you need numeric calculations.</p>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Formatted strings</h2><p>F-strings are a clean way to combine text and variables. They are easy to read and are the preferred choice for most modern Python code.</p></article>
+      <article class="content-card"><h2>Error handling around input</h2><p>Be careful when converting user input. Invalid numbers can raise errors, so later lessons on exceptions are useful for making programs more robust.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>Why does input() return a string?</summary><p>Python treats user input as raw text first. You decide how to convert it based on the task.</p></details><details class="faq-item"><summary>What is the advantage of f-strings?</summary><p>They make text formatting readable, concise, and easy to maintain compared with older formatting styles.</p></details><details class="faq-item"><summary>How can I print multiple values neatly?</summary><p>Use commas in print(), f-strings, or sep and end arguments when you need precise formatting.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Interactive console patterns for input prompts and readable output.</p></div><div class="footer-links"><a href="variables.html">Variables</a><a href="conditional-statements.html">Conditionals</a><a href="functions.html">Functions</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

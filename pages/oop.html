@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Object Oriented Programming | Classes and Objects</title>
+  <meta name="description" content="Learn Python object oriented programming with classes, objects, attributes, methods, inheritance, and FAQs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html" aria-current="page">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Object Oriented Programming</h1>
+    <p>Object oriented programming models software as objects that combine data and behavior. Classes act as blueprints, while objects are the instances you work with in your program. This style is helpful for modeling real-world entities and organizing larger applications.</p>
+    <div class="content-card">
+      <h2>Class and object example</h2>
+      <pre class="code-block"><code>class Course:
+    def __init__(self, title, lessons):
+        self.title = title
+        self.lessons = lessons
+
+    def summary(self):
+        return f"{self.title} has {self.lessons} lessons"
+
+course = Course("Python Basics", 12)
+print(course.summary())</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Attributes and methods</h2><p>Attributes store data, and methods define actions. Together they describe what an object knows and what it can do.</p></article>
+      <article class="content-card"><h2>Inheritance</h2><p>Inheritance lets one class reuse and extend another class. Use it when two types share core behavior but differ in specific details.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>What is the purpose of self?</summary><p>self refers to the current object instance and gives methods access to its data.</p></details><details class="faq-item"><summary>Should every program use classes?</summary><p>No. Use classes when they improve organization. Many small scripts are easier to write with functions and data structures.</p></details><details class="faq-item"><summary>What is a constructor?</summary><p>In Python, __init__ is commonly used to initialize a new object with its starting values.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Classes, objects, and reusable structure for larger Python codebases.</p></div><div class="footer-links"><a href="functions.html">Functions</a><a href="interview-questions.html">Interview Questions</a><a href="projects.html">Projects</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

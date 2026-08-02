@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Variables | Assignment, Naming, and Scope</title>
+  <meta name="description" content="Learn Python variables, assignment, naming rules, and scope with clear examples, tips, and FAQs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html" aria-current="page">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Variables</h1>
+    <p>Variables give names to values so you can reuse, update, and organize data in a program. In Python, assignment is dynamic, which means the type belongs to the value rather than the variable name. That flexibility is powerful, but it also makes clear naming especially important.</p>
+    <div class="content-card">
+      <h2>Assignment and naming</h2>
+      <p>Choose descriptive names that explain the role of the value. Use lowercase_with_underscores for readability and avoid shadowing built-in names.</p>
+      <pre class="code-block"><code>student_name = "Mira"
+course_title = "Python Basics"
+lesson_count = 12
+
+print(student_name, "is studying", course_title)</code></pre>
+    </div>
+    <div class="content-grid">
+      <article class="content-card">
+        <h2>Multiple assignment</h2>
+        <p>Python supports assigning several values at once. This keeps code concise when the values belong together.</p>
+        <pre class="code-block"><code>width, height = 1280, 720
+red, green, blue = (255, 180, 0)</code></pre>
+      </article>
+      <article class="content-card">
+        <h2>Scope matters</h2>
+        <p>Variables created inside functions are usually local. Globals should be used carefully because they make programs harder to reason about.</p>
+      </article>
+    </div>
+    <div class="content-card" data-faq>
+      <h2>FAQs</h2>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Can a variable change type in Python?</summary><p>Yes. The name can point to a different type later, which is why code should rely on clear names and predictable flow.</p></details>
+        <details class="faq-item"><summary>What is the best naming style?</summary><p>Use descriptive, lowercase names with underscores, such as total_price or user_age.</p></details>
+        <details class="faq-item"><summary>Should I use global variables?</summary><p>Only when absolutely necessary. Prefer function parameters and return values because they keep logic easier to test and reuse.</p></details>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Variables, scope, and naming patterns for beginner-friendly Python code.</p></div><div class="footer-links"><a href="data-types.html">Data Types</a><a href="functions.html">Functions</a><a href="cheat-sheet.html">Cheat Sheet</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

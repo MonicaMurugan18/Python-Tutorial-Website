@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Operators | Arithmetic, Comparison, and Logic</title>
+  <meta name="description" content="Learn Python operators for arithmetic, comparison, assignment, identity, membership, and logical expressions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark">Py</span><span>Python Tutor Hub</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle><span></span></button><nav class="site-nav" data-site-nav><a href="../index.html">Home</a><a href="python-basics.html">Basics</a><a href="variables.html">Variables</a><a href="data-types.html">Data Types</a><a href="operators.html" aria-current="page">Operators</a><a href="input-output.html">Input &amp; Output</a><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a><a href="oop.html">OOP</a><a href="interview-questions.html">Interview Questions</a><a href="cheat-sheet.html">Cheat Sheet</a><a href="contact.html">Contact</a></nav></div></header>
+  <main class="content page-shell">
+    <h1>Python Operators</h1>
+    <p>Operators let you combine values and make decisions. Arithmetic operators work with numbers, comparison operators produce boolean results, and logical operators help build compound conditions. Knowing the precedence rules saves time when debugging expressions.</p>
+    <div class="content-card">
+      <h2>Common operator groups</h2>
+      <pre class="code-block"><code>total = 25 + 5 * 2
+is_adult = age >= 18
+can_vote = is_adult and citizenship == "yes"
+
+print(total, is_adult, can_vote)</code></pre>
+      <ul>
+        <li>Arithmetic: +, -, *, /, //, %, **</li>
+        <li>Comparison: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+        <li>Logical: and, or, not</li>
+      </ul>
+    </div>
+    <div class="content-grid">
+      <article class="content-card"><h2>Membership and identity</h2><p>in checks whether a value exists inside a sequence, while is checks object identity. They solve different problems and should not be confused.</p></article>
+      <article class="content-card"><h2>Precedence tips</h2><p>When an expression becomes complex, use parentheses to show your intent. Clear grouping is better than relying on memory.</p></article>
+    </div>
+    <div class="content-card" data-faq><h2>FAQs</h2><div class="faq-list"><details class="faq-item"><summary>What is the difference between / and //?</summary><p>/ returns a float division result, while // performs floor division and drops the fractional part.</p></details><details class="faq-item"><summary>When should I use logical operators?</summary><p>Use them when a decision depends on more than one condition, such as checking age and membership status together.</p></details><details class="faq-item"><summary>Why is == different from is?</summary><p>== compares values, but is checks whether both names point to the exact same object.</p></details></div></div>
+  </main>
+  <footer class="footer"><div class="footer-inner"><div><strong>Python Tutor Hub</strong><p class="muted">Arithmetic, comparison, and logical expressions explained with simple examples.</p></div><div class="footer-links"><a href="conditional-statements.html">Conditionals</a><a href="loops.html">Loops</a><a href="functions.html">Functions</a></div></div></footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
